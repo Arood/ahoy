@@ -1,0 +1,90 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500);
+
+.ahoy-anchor {
+  position: absolute;
+  left: 11px;
+  font: 500 14px/38px Roboto, sans-serif;
+  background: rgba(0,0,0,0.8);
+  z-index: 900000;
+  color: #fff;
+  max-width: 40%;
+  padding: 0 10px;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: AhoyPopIn 0.4s;
+          animation: AhoyPopIn 0.4s;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ahoy-anchor-inner {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ahoy-anchor:before {
+  height: 0;
+  width: 0;
+  content: "";
+  border: 5px solid rgba(0,0,0,0.8);
+  border-color: rgba(0,0,0,0.8) rgba(0,0,0,0.8) transparent transparent;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+.ahoy-subanchor {
+  display: inline;
+  opacity: 0.5;
+}
+
+.ahoy-subanchor:before {
+  content: " ";
+}
+
+.ahoy-subanchor + .ahoy-subanchor {
+  opacity: 0.33333333334;
+}
+
+.ahoy-subanchor + .ahoy-subanchor + .ahoy-subanchor {
+  opacity: 0.16666666667;
+}
+
+@-webkit-keyframes AhoyPopIn {
+  0% {
+    -webkit-transform: scale(0,0);
+            transform: scale(0,0);
+  }
+  40% {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  70% {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1,1);
+            transform: scale(1,1);
+  }
+}
+
+@keyframes AhoyPopIn {
+  0% {
+    -webkit-transform: scale(0,0);
+            transform: scale(0,0);
+  }
+  40% {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  70% {
+    -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+  }
+  100% {
+    -webkit-transform: scale(1,1);
+            transform: scale(1,1);
+  }
+}
