@@ -1,5 +1,5 @@
 
-![](anchor.png)
+![](http://arood.github.io/ahoy/images/anchor.png)
 
 # Ahoy ye landlubbers
 
@@ -15,7 +15,7 @@ Take a look at [the website](http://arood.github.io/ahoy) for instructions.
 
 Ahoy was developed by [Marcus Olovsson](http://marcusolovsson.com) ([@Arood](http://twitter.com/Arood))
 
-![](author.png)
+![](http://arood.github.io/ahoy/images/author.png)
 
 ## 📢 Acknowledgements
 

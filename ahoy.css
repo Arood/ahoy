@@ -9,7 +9,6 @@
   color: #fff;
   max-width: 40%;
   padding: 0 10px;
-  text-shadow: none;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-animation: AhoyPopIn 0.4s;
@@ -22,6 +21,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-shadow: 0 0 0 transparent;
 }
 
 .ahoy-anchor:before {
